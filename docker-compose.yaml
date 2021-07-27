@@ -9,7 +9,7 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
+    image: tikhonov1994/yamdb_final
     restart: always
     command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
     ports:
