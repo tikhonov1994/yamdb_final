@@ -9,11 +9,10 @@ class GenreField(serializers.SlugRelatedField):
             self.fail('invalid')
 
     def to_representation(self, value):
-        ret = {
+        return {
             'name': value.name,
             'slug': value.slug
         }
-        return ret
 
 
 class CategoryField(serializers.SlugRelatedField):
@@ -24,8 +23,7 @@ class CategoryField(serializers.SlugRelatedField):
             self.fail('invalid')
 
     def to_representation(self, value):
-        ret = {
+        return {
             'name': value.name,
             'slug': value.slug
         }
-        return ret
