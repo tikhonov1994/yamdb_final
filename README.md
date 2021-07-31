@@ -47,4 +47,7 @@ https://github.com/tikhonov1994/yamdb_final/actions/workflows/yamdb_workflow.yam
 Команда для загрузки статики 
  
 ```docker-compose exec web python manage.py loaddata fixtures.json``` 
-Загрузка тестовых данных 
+Загрузка тестовых данных
+
+```http://178.154.222.202/```
+Ссылка на развернутый проект
